@@ -35,4 +35,17 @@ button:focus-visible {
   text-decoration: line-through;
 }
 
+a{
+  margin-right: 5px;
+}
+
+.active{
+  font-weight: bold;
+}
+
+.navbar {
+  border-radius: 8px ;
+
+}
+
 

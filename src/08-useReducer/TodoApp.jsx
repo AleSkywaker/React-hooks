@@ -4,7 +4,6 @@ import { TodoList, TodoAdd } from './components';
 export const TodoApp = () => {
   const { todos, pendingTodos, allTodos, handleAddTodo, handleDeleteTodo, handleToggleTodo } =
     useTodo();
-  console.log(todos)
   return (
     <>
       <h3>

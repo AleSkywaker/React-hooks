@@ -1,4 +1,4 @@
-import React from 'react'
+import { BrowserRouter } from 'react-router-dom';
 import { CounterApp, CounterWithCustomHook } from './01-useState';
 import { FormWithCustomHook } from './02-useEffect/formWithCustomHook';
 import { SimpleForm } from './02-useEffect/SimpleForm';
@@ -9,6 +9,7 @@ import { MemoHook } from './06-memos/MemoHook';
 import { Memorize } from './06-memos/Memorize';
 import { CallBackHook } from './07-useCallback/CallBackHook';
 import { TodoApp } from './08-useReducer/TodoApp';
+import { MainApp } from './09-useContext/MainApp';
 
 export const HooksApp = () => {
   return (
@@ -16,15 +17,19 @@ export const HooksApp = () => {
       <div className='container'>
         <h2>HooksApp</h2>
         <hr />
-        <TodoApp/>
+        <BrowserRouter>
+          <MainApp />
+        </BrowserRouter>
         <hr />
-        <CallBackHook/>
+        <TodoApp />
         <hr />
-        <MemoHook/>
+        <CallBackHook />
         <hr />
-        <Memorize/>
+        <MemoHook />
         <hr />
-        <Layout/>
+        <Memorize />
+        <hr />
+        <Layout />
         <hr />
         <FocusScreen />
         <hr />
