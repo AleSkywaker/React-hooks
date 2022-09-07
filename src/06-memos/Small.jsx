@@ -1,7 +1,7 @@
 import { memo } from 'react';
 
 export const Small =memo(({value}) => {
-  console.log('volvi a generar');
+  // console.log('volvi a generar');
   return (
     <small>{value}</small>
   )

@@ -8,12 +8,15 @@ import { Layout } from './05-useLayoutEffect/Layout';
 import { MemoHook } from './06-memos/MemoHook';
 import { Memorize } from './06-memos/Memorize';
 import { CallBackHook } from './07-useCallback/CallBackHook';
+import { TodoApp } from './08-useReducer/TodoApp';
 
 export const HooksApp = () => {
   return (
     <>
       <div className='container'>
         <h2>HooksApp</h2>
+        <hr />
+        <TodoApp/>
         <hr />
         <CallBackHook/>
         <hr />
